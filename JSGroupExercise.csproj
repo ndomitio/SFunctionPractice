@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7FD6D0B3-30FF-4897-BDD3-7519E4AB3BED}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>JSGroupExercise</RootNamespace>
+    <AssemblyName>JSGroupExercise</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="JSFunctionPractice-master\JSFunctionPractice\App_Start\BundleConfig.cs" />
+    <Compile Include="JSFunctionPractice-master\JSFunctionPractice\App_Start\FilterConfig.cs" />
+    <Compile Include="JSFunctionPractice-master\JSFunctionPractice\App_Start\RouteConfig.cs" />
+    <Compile Include="JSFunctionPractice-master\JSFunctionPractice\Controllers\HomeController.cs" />
+    <Compile Include="JSFunctionPractice-master\JSFunctionPractice\Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="JSFunctionPractice-master\JSFunctionPractice\Properties\AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="JSFunctionPractice-master\JSFunctionPractice\ApplicationInsights.config" />
+    <None Include="JSFunctionPractice-master\JSFunctionPractice\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="JSFunctionPractice-master\JSFunctionPractice\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="JSFunctionPractice-master\JSFunctionPractice\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="JSFunctionPractice-master\JSFunctionPractice\packages.config" />
+    <None Include="JSFunctionPractice-master\JSFunctionPractice\Scripts\jquery-1.10.2.min.map" />
+    <None Include="JSFunctionPractice-master\JSFunctionPractice\Views\Home\About.cshtml" />
+    <None Include="JSFunctionPractice-master\JSFunctionPractice\Views\Home\Contact.cshtml" />
+    <None Include="JSFunctionPractice-master\JSFunctionPractice\Views\Home\Index.cshtml" />
+    <None Include="JSFunctionPractice-master\JSFunctionPractice\Views\Shared\Error.cshtml" />
+    <None Include="JSFunctionPractice-master\JSFunctionPractice\Views\Shared\_Layout.cshtml" />
+    <None Include="JSFunctionPractice-master\JSFunctionPractice\Views\Web.config" />
+    <None Include="JSFunctionPractice-master\JSFunctionPractice\Views\_ViewStart.cshtml" />
+    <None Include="JSFunctionPractice-master\JSFunctionPractice\Web.config" />
+    <None Include="JSFunctionPractice-master\JSFunctionPractice\Web.Debug.config" />
+    <None Include="JSFunctionPractice-master\JSFunctionPractice\Web.Release.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="JSFunctionPractice-master\.gitignore" />
+    <Content Include="JSFunctionPractice-master\JSFunctionPractice.sln" />
+    <Content Include="JSFunctionPractice-master\JSFunctionPractice\Content\bootstrap.css" />
+    <Content Include="JSFunctionPractice-master\JSFunctionPractice\Content\bootstrap.min.css" />
+    <Content Include="JSFunctionPractice-master\JSFunctionPractice\Content\JavaScript.js" />
+    <Content Include="JSFunctionPractice-master\JSFunctionPractice\Content\Site.css" />
+    <Content Include="JSFunctionPractice-master\JSFunctionPractice\favicon.ico" />
+    <Content Include="JSFunctionPractice-master\JSFunctionPractice\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="JSFunctionPractice-master\JSFunctionPractice\Global.asax" />
+    <Content Include="JSFunctionPractice-master\JSFunctionPractice\JSFunctionPractice.csproj" />
+    <Content Include="JSFunctionPractice-master\JSFunctionPractice\Scripts\bootstrap.js" />
+    <Content Include="JSFunctionPractice-master\JSFunctionPractice\Scripts\bootstrap.min.js" />
+    <Content Include="JSFunctionPractice-master\JSFunctionPractice\Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="JSFunctionPractice-master\JSFunctionPractice\Scripts\jquery-1.10.2.js" />
+    <Content Include="JSFunctionPractice-master\JSFunctionPractice\Scripts\jquery-1.10.2.min.js" />
+    <Content Include="JSFunctionPractice-master\JSFunctionPractice\Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="JSFunctionPractice-master\JSFunctionPractice\Scripts\jquery.validate.js" />
+    <Content Include="JSFunctionPractice-master\JSFunctionPractice\Scripts\jquery.validate.min.js" />
+    <Content Include="JSFunctionPractice-master\JSFunctionPractice\Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="JSFunctionPractice-master\JSFunctionPractice\Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="JSFunctionPractice-master\JSFunctionPractice\Scripts\modernizr-2.6.2.js" />
+    <Content Include="JSFunctionPractice-master\JSFunctionPractice\Scripts\respond.js" />
+    <Content Include="JSFunctionPractice-master\JSFunctionPractice\Scripts\respond.min.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
